@@ -12,11 +12,6 @@ public class HttpStatusChecker {
 
     String site_url = "https://http.cat";
 
-
-    public static void main(String[] args) throws IOException {
-        HttpStatusChecker httpStatusChecket = new HttpStatusChecker();
-        httpStatusChecket.getStatusImage(200);
-    }
     public String getStatusImage(int code) throws IOException {
 
         URL url = new URL(site_url + "/" + code + ".jpg");

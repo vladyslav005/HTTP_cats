@@ -9,12 +9,6 @@ import java.nio.file.Paths;
 
 public class HttpStatusImageDownloader {
 
-
-    public static void main(String[] args) throws IOException {
-        HttpStatusImageDownloader http = new HttpStatusImageDownloader();
-        http.downloadStatusImage(404);
-    }
-
      public void downloadStatusImage(int code) throws IOException {
          HttpStatusChecker httpStatusChecker = new HttpStatusChecker();
          URL url = new URL(httpStatusChecker.getStatusImage(code));
